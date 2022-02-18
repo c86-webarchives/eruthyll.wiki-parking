@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no"/>
+<title>Comming Soon</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="styles" charset="utf-8">
+</head>
+<body class="transition-none">
+<div class="content center opacity-0">
+	<p>Something Amazing<br />is on its way!</p>
+</div>
+<div class="console display-none">
+</div>
+<script src="ajax/libs/jquery/1-11-1/jquery.min.js"></script>
+<script>
+if (navigator.appVersion.indexOf("Win")!= -1)
+		$("body").addClass("windows")
+$("body").removeClass("transition-none")
+setTimeout(function () {
+	$(".content").removeClass("opacity-0")
+}, 600)
+</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "TradeGothic-Bold";
+  src: url("fonts/TradeGothic-Bold.eot") format("embedded-opentype"),  url("fonts/TradeGothic-Bold.woff") format("woff"), url("http://www.dwaawards.com/fonts/TradeGothic-Bold.ttf")  format("truetype"), url("img/TradeGothic-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	background: #12c6e9;
+	background: radial-gradient(circle farthest-side at 15% 75%, #12c6e9 0, #117dd1 100%);
+	font-size: 1vw;
+	line-height: 1;
+	color: #fff;
+	overflow: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased; 
+	-webkit-text-size-adjust: none; 
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+	cursor: default; 
+	text-rendering: optimizeLegibility;
+}
+
+.transition-none, 
+.transition-none * {
+	-webkit-transition: none !important;
+			transition: none !important;
+}
+
+sup {
+	vertical-align: bottom;
+	font-size: 0.52em;
+	position: relative;
+	bottom: 1.2em;
+	display: inline-block;
+	padding: 0 0 0 0.06em;
+}
+
+.opacity-0 {
+	opacity: 0;
+}
+
+.clear-both {
+	clear: both;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.display-none {
+	display: none;
+}
+
+.visibility-hidden,
+.visibility-hidden * {
+	visibility: hidden;
+	pointer-events: none;
+	cursor: default;
+}
+
+.pointer-events-none,
+.pointer-events-none * {
+	pointer-events: none;
+	cursor: default;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
+
+.translate3d,
+.translate3d * {
+	-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+}
+
+/*
+
+
+ ad88888ba   88                      
+d8"     "8b  ""    ,d                
+Y8,                88                
+`Y8aaaaa,    88  MM88MMM  ,adPPYba,  
+  `"""""8b,  88    88    a8P_____88  
+		`8b  88    88    8PP"""""""  
+Y8a     a8P  88    88,   "8b,   ,aa  
+ "Y88888P"   88    "Y888  `"Ybbd8"'
+
+
+*/
+
+.content {
+	font-size: 0.83em;
+	width: 54em;
+	text-align: center;
+	font-family: "TradeGothic-Bold";
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	-webkit-transition: opacity 1.2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+			transition: opacity 1.2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+	.content img {
+		display: block;
+	}
+
+	.content p {
+		font-size: 1.7em;
+		padding: 2.3em;
+	}
+
+.console {
+	z-index: 20000;
+	font-size: 22px;
+	background: rgba(0, 0, 0, .8);
+	position: fixed;
+	bottom: 0;
+	right: 50%;
+	color: #ef8adb;
+	padding: 0.25em 0.5em 0.1em 0.5em;
+	pointer-events: none;
+	font-family: "TradeGothic-Bold";
+	-webkit-transform: translate(50%, 0);
+	        transform: translate(50%, 0);
+}
+
+	.console:before {
+		content: "normal";
+	}
+
+
+/*
+
+
+I8,        8        ,8I  88                        88                                              
+`8b       d8b       d8'  ""                        88                                              
+ "8,     ,8"8,     ,8"                             88                                              
+  Y8     8P Y8     8P    88  8b,dPPYba,    ,adPPYb,88   ,adPPYba,   8b      db      d8  ,adPPYba,  
+  `8b   d8' `8b   d8'    88  88P'   `"8a  a8"    `Y88  a8"     "8a  `8b    d88b    d8'  I8[    ""  
+   `8a a8'   `8a a8'     88  88       88  8b       88  8b       d8   `8b  d8'`8b  d8'    `"Y8ba,   
+    `8a8'     `8a8'      88  88       88  "8a,   ,d88  "8a,   ,a8"    `8bd8'  `8bd8'    aa    ]8I  
+     `8'       `8'       88  88       88   `"8bbdP"Y8   `"YbbdP"'       YP      YP      `"YbbdP"'
+
+
+*/
+
+/*
+
+
+88888888ba                                                                           88                           
+88      "8b                                                                          ""                           
+88      ,8P                                                                                                       
+88aaaaaa8P'  ,adPPYba,  ,adPPYba,  8b,dPPYba,    ,adPPYba,   8b,dPPYba,   ,adPPYba,  88  8b       d8   ,adPPYba,  
+88""""88'   a8P_____88  I8[    ""  88P'    "8a  a8"     "8a  88P'   `"8a  I8[    ""  88  `8b     d8'  a8P_____88  
+88    `8b   8PP"""""""   `"Y8ba,   88       d8  8b       d8  88       88   `"Y8ba,   88   `8b   d8'   8PP"""""""  
+88     `8b  "8b,   ,aa  aa    ]8I  88b,   ,a8"  "8a,   ,a8"  88       88  aa    ]8I  88    `8b,d8'    "8b,   ,aa  
+88      `8b  `"Ybbd8"'  `"YbbdP"'  88`YbbdP"'    `"YbbdP"'   88       88  `"YbbdP"'  88      "8"       `"Ybbd8"'  
+								   88                                                                             
+								   88                                                                             
+*/
+
+@media (max-aspect-ratio: 79/100) {
+	.console:before {
+		content: "super-tall";
+	}
+
+	.content {
+		font-size: 1.6em;
+	}
+}
+
+@media (min-aspect-ratio: 79/100) and (max-aspect-ratio: 105/100) {
+	.console:before {
+		content: "taller";
+	}
+
+	.content {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-aspect-ratio: 105/100) and (max-aspect-ratio: 120/100) {
+	.console:before {
+		content: "tall";
+	}
+
+	.content {
+		font-size: 0.97em;
+	}
+}
+
+@media (min-aspect-ratio: 140/100) {
+	.console:before {
+		content: "wide";
+	}
+
+	.content {
+		font-size: 0.77em;
+	}
+}
+
+@media (min-aspect-ratio: 155/100) {
+	.console:before {
+		content: "wider";
+	}
+
+	.content {
+		font-size: 0.73em;
+	}
+}
+
+@media (min-aspect-ratio: 170/100) {
+	.console:before {
+		content: "super-wide";
+	}
+
+	.content {
+		font-size: 0.7em;
+	}
+}
+
+@media (max-aspect-ratio: 105/100) and (max-width: 700px) {
+	.content p {
+		font-size: 3em;
+		padding: 1.6em;
+	}
+}
+
+
+@media (min-aspect-ratio: 105/100) and (max-width: 700px) {
+	.content {
+		font-size: 1em;
+	}
+
+	.content p {
+		font-size: 3em;
+		padding: 1.6em;
+	}
+}
